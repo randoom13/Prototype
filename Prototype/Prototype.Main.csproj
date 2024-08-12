@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BotTimeICSharpCode.AvalonEdit" Version="1.0.2" />
+    <PackageReference Include="Caliburn.Micro" Version="4.0.212" />
+    <PackageReference Include="log4net" Version="3.0.0-preview.2" />
+    <PackageReference Include="MahApps.Metro" Version="3.0.0-alpha0492" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.11.0-3.final" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.11.0-3.final" />
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+    <PackageReference Include="Prism.Unity" Version="9.0.401-pre" />
+    <PackageReference Include="System.Threading.Tasks.Dataflow" Version="9.0.0-preview.6.24327.7" />
+  </ItemGroup>
+
+
+
+</Project>
